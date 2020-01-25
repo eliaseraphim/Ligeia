@@ -17,6 +17,7 @@ import android.widget.TextView
 import androidx.annotation.IdRes
 import com.github.eliaseraphim.ligeia.ui.main.SectionsPagerAdapter
 
+
 class MainActivity : AppCompatActivity(), View.OnClickListener,
     TabLayout.BaseOnTabSelectedListener<TabLayout.Tab> {
 

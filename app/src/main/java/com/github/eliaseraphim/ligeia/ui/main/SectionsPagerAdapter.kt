@@ -7,8 +7,12 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.github.eliaseraphim.ligeia.R
 
 private val TAB_TITLES = arrayOf(
-    R.string.tab_text_1,
-    R.string.tab_text_2
+    R.string.tab_recently_played,
+    R.string.tab_artists,
+    R.string.tab_albums,
+    R.string.tab_playlists,
+    R.string.tab_songs,
+    R.string.tab_favorites
 )
 
 /**
@@ -29,7 +33,7 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     }
 
     override fun getCount(): Int {
-        // Show 2 total pages.
-        return 2
+        // Show 6 total pages.
+        return 6
     }
 }

@@ -1,5 +1,7 @@
 <resources>
 
+    <string name="app_name">Ligeia</string>
+
     <!-- -->
     <string name="text_current_song">current song</string>
 
@@ -11,11 +13,13 @@
 
 
     <!-- Tab Bar Items -->
-    <string name="tab_songs">songs</string>
+    <string name="tab_recently_played">recently played</string>
     <string name="tab_artists">artists</string>
     <string name="tab_albums">albums</string>
     <string name="tab_playlists">playlists</string>
+    <string name="tab_songs">songs</string>
     <string name="tab_favorites">favorites</string>
+    <string name="tab_search">search</string>
 
     <!-- Bottom Control Bar-->
         <!-- Content Descriptions  -->

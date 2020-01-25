@@ -22,7 +22,7 @@
         <LinearLayout
             android:id="@+id/system_bar"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:paddingTop="5dp">
 
@@ -34,10 +34,11 @@
             <ImageButton
                 android:id="@+id/btn_settings"
 
-                android:layout_width="45dp"
-                android:layout_height="match_parent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="start"
 
+                android:padding="3dp"
 
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
@@ -45,7 +46,7 @@
                 android:layout_margin="4dp"
 
                 android:src="@drawable/settings"
-                android:background="clear"
+                android:background="@color/colorTransparent"
                 android:tint="@color/ligeia1Icons"
 
                 android:contentDescription="@string/cd_settingsButton" />
@@ -62,7 +63,7 @@
                 android:id="@+id/text_current_tab"
 
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="40dp"
                 android:minHeight="?actionBarSize"
 
                 android:layout_marginBottom="8dp"
@@ -99,7 +100,7 @@
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab_two"
 
-                android:layout_width=""
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
 
                 android:text="@string/tab_artists" />
@@ -107,7 +108,7 @@
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab_three"
 
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
 
                 android:text="@string/tab_albums" />
@@ -123,7 +124,7 @@
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab_five"
 
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
 
                 android:text="@string/tab_songs" />
@@ -131,7 +132,7 @@
             <com.google.android.material.tabs.TabItem
                 android:id="@+id/tab_six"
 
-                android:layout_width="50dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
 
                 android:icon="@drawable/heart" />
@@ -146,7 +147,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/toolbar_control_bar"
+        android:layout_above="@+id/toolbar_current_song"
 
         android:layout_below="@+id/top_app_bar_control_layout" />
 
