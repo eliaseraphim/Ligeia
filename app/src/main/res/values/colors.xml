@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorTransparent">#000000000</color>"
+
+    <color name="ligeia1PrimaryDark">#246a73</color>
+    <color name="ligeia1Primary">#368f8b</color>
+    <color name="ligeia1Background">#18151f</color>
+    <color name="ligeia1Text">#f3dfc1</color>
+    <color name="ligeia1Icons">#f3dfc1</color>
+    <color name="ligeia1IconsActivated">#ddbea8</color>
+
+    <color name="ligeia2Primary">#29b1b8</color>
+    <color name="ligeia2PrimaryLight">#84c7cc</color>
+    <color name="ligeia2PrimaryDark">#231f20</color>
+    <color name="ligeia2Accent1">#fff8c0</color>
+    <color name="ligeia2Accent2">#bb4430</color>
+
+    <color name="sealanternPrimary">#8484b5</color>
+    <color name="sealanternPrimaryLight">#bd84a4</color>
+    <color name="sealanternPrimaryDark">#477aa5</color>
+    <color name="sealanternAccent1">#fbe1e0</color>
+    <color name="sealanternAccent2">#ffaab7</color>
+
+    <color name="sunrisePrimary">#194a50</color>
+    <color name="sunrisePrimaryLight">#d37556</color>
+    <color name="sunrisePrimaryDark">#0c2431</color>
+    <color name="sunriseAccent1">#e1dad2</color>
+    <color name="sunriseAccent2">#d8a28c</color>
+
+    <color name="sunsetPrimary">#fa8535</color>
+    <color name="sunsetPrimaryLight">#fe9920</color>
+    <color name="sunsetPrimaryDark">#f6c541</color>
+    <color name="sunsetAccent1">#50bbca</color>
+    <color name="sunsetAccent2">#ff7b6f</color>
+</resources>

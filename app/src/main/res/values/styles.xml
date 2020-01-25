@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="currentTabItems" parent="">
+
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:font">@font/major_mono</item>
+
+        <item name="android:colorPrimary">@color/ligeia1Primary</item>
+        <item name="android:colorPrimaryDark">@color/ligeia1PrimaryDark</item>
+        <item name="android:colorBackground">@color/ligeia1Background</item>
+        <item name="android:textColor">@color/ligeia1Text</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:colorButtonNormal">@color/ligeia1Icons</item>
+        <item name="android:colorControlActivated">@color/ligeia1IconsActivated</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TabLayout" parent="android:Widget">
+        <item name="android:textColor">@color/ligeia1Text</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:font">@font/major_mono</item>
+
+        <item name="android:colorPrimary">@color/ligeia1Primary</item>
+        <item name="android:colorPrimaryDark">@color/ligeia1PrimaryDark</item>
+        <item name="android:colorBackground">@color/ligeia1Background</item>
+        <item name="android:textColor">@color/ligeia1Text</item>
+        <item name="android:colorButtonNormal">@color/ligeia1Icons</item>
+        <item name="android:colorControlActivated">@color/ligeia1IconsActivated</item>
+    </style>
+
+</resources>

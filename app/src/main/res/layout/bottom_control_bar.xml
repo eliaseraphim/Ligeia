@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:weightSum="200"
+
+    android:gravity="center_horizontal"
+
+    android:background="@color/ligeia1PrimaryDark">
+
+    <ImageButton
+        android:id="@+id/btn_shuffle"
+        android:contentDescription="@string/cd_shuffleButton"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+
+        android:layout_marginEnd="10dp"
+        android:padding="6dp"
+
+        android:background="@color/colorTransparent"
+        android:src="@drawable/shuffle"
+        android:tint="@color/ligeia1Icons"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <ImageButton
+        android:id="@+id/btn_rewind"
+        android:contentDescription="@string/cd_rewindButton"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="35"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:padding="8dp"
+
+        android:background="@color/colorTransparent"
+        android:src="@drawable/rewind"
+        android:tint="@color/ligeia1Icons"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_play_pause"
+        android:contentDescription="@string/cd_playPauseButton"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="45"
+
+        android:padding="6dp"
+
+        android:background="@color/colorTransparent"
+        android:src="@drawable/play"
+        android:tint="@color/ligeia1Icons"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_fast_forward"
+        android:contentDescription="@string/cd_fastForwardButton"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="35"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:padding="8dp"
+
+        android:background="@color/colorTransparent"
+        android:src="@drawable/fast_forwad"
+        android:tint="@color/ligeia1Icons"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+    <ImageButton
+        android:id="@+id/btn_repeat"
+        android:contentDescription="@string/cd_repeatButton"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"
+
+        android:layout_marginStart="10dp"
+        android:padding="8dp"
+
+        android:background="@color/colorTransparent"
+        android:src="@drawable/single"
+        android:tint="@color/ligeia1Icons"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+
+</LinearLayout>

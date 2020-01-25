@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appOuterLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Top Activity Bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_app_bar_control_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/ligeia1PrimaryDark">
+
+        <LinearLayout
+            android:id="@+id/system_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <!--
+                android:adjustViewBounds allows for the images adjustment of its size
+                (squish/squash), the layout width manually, but leave the layout_height alone
+             -->
+            <!-- Settings Button -->
+            <ImageButton
+                android:id="@+id/btn_settings"
+
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+
+
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+
+                android:layout_margin="4dp"
+
+                android:src="@drawable/settings"
+                android:background="clear"
+                android:tint="@color/ligeia1Icons"
+
+                android:contentDescription="@string/cd_settingsButton" />
+
+
+            <!--
+                Need to create a center the text on the end dynamically at startup by setting up
+                the marginBottom manually. Shouldn't be too difficult to make as the initial
+                setup. I also should come up with a load order for the buttons and fragments.
+                Adding that to the trello board.
+            -->
+            <!-- Current Tab Text-->
+            <TextView
+                android:id="@+id/text_current_tab"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="?actionBarSize"
+
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="40dp"
+                android:paddingTop="10dp"
+
+                android:text="@string/tab_current"
+
+                android:fontFamily="@font/major_mono"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:textSize="25sp"
+
+                android:gravity="end"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+
+        <!-- Tab Bar Layout -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/playlist_selector_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:tabMode="scrollable"
+            app:tabGravity="center" >
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_one"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:icon="@drawable/loading" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_two"
+
+                android:layout_width=""
+                android:layout_height="match_parent"
+
+                android:text="@string/tab_artists" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_three"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:text="@string/tab_albums" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_four"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="@string/tab_playlists" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_five"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:text="@string/tab_songs" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab_six"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:icon="@drawable/heart" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Viewport-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_main"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/toolbar_control_bar"
+
+        android:layout_below="@+id/top_app_bar_control_layout" />
+
+    <!-- Music Control Bar-->
+    <include layout="@layout/currrent_song_bar"
+        android:id="@+id/toolbar_current_song"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="?attr/actionBarSize"
+
+        android:layout_above="@+id/toolbar_control_bar"
+
+        android:gravity="fill_horizontal" />
+
+    <!-- Bottom Control Bar -->
+    <include layout="@layout/bottom_control_bar"
+        android:id="@+id/toolbar_control_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:gravity="fill_horizontal" />
+
+</RelativeLayout>

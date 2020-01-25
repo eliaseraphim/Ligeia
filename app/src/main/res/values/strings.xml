@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- -->
+    <string name="text_current_song">current song</string>
+
+    <!-- Current Tab Bar -->
+    <string name="tab_current">LiGeiA</string>
+
+        <!-- Content Descriptions -->
+    <string name="cd_settingsButton">The settings button. Click to access application settings.</string>
+
+
+    <!-- Tab Bar Items -->
+    <string name="tab_songs">songs</string>
+    <string name="tab_artists">artists</string>
+    <string name="tab_albums">albums</string>
+    <string name="tab_playlists">playlists</string>
+    <string name="tab_favorites">favorites</string>
+
+    <!-- Bottom Control Bar-->
+        <!-- Content Descriptions  -->
+    <string name="cd_shuffleButton">The Shuffle Button. Tap the Shuffle Button shuffle the current playlist. Tapping again, unshuffles the playlist.</string>
+    <string name="cd_rewindButton">The Rewind Button. Tap the Rewind Button to restart the song at the beginning after the ong has played for at least 3 seconds. Otherwise, seek to the previous track in the playlist. Tap and hold to rewind the song manually.</string>
+    <string name="cd_playPauseButton">The Play/Pause button. Tap the Play/Pause button song to play/pause the song respectively. </string>
+    <string name="cd_fastForwardButton">The Fast-Forward Button. Tap the Fast-Forward Button to seek to the next track. Tap and hold to fast-forward through the song.</string>
+    <string name="cd_repeatButton">The Repeat Button. There are 3 modes: Playthrough, represented by a straight line and plays the entire current playlist once, and then pauses, Repeat Current Playlist, represented by curved arrows pointing at each other and plays the current playlist in a loop, and Repeat One, represented by the Repeat Icon but includes a 1 on the inside and plays the current song in a loop.</string>
+
+        <!-- Button Titles -->
+    <string name="title_shuffleButton">Shuffle Button</string>
+    <string name="title_rewindButton">Rewind Button</string>
+    <string name="title_playPauseButton">Play/Pause Button</string>
+    <string name="title_fastForwardButton">Fast-Forward Button</string>
+    <string name="title_repeatButton">Repeat Button</string>
+</resources>
