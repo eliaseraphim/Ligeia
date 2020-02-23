@@ -46,6 +46,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     private lateinit var btnRepeat: ImageButton
 
 
+    /*
+    *   function: onCreate
+    *   description: primary creation function required for android applications
+    *       - Handles setting up the main activity, main frame layout, and listeners for buttons
+    *   date: 02/18/20
+    *       - Added function header to current setup.
+    */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -64,6 +71,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     }
 
 
+    /*  function: initializeUI
+    *   description: initializes the main activity UI
+    *       - initializes the main viewport, and sets the adapter
+    *       - creates listeners for all main activity buttons
+    *       - creates listeners for tabs
+    *   date: 02/18/19
+    *       - added function header
+    */
     private fun initializeUI() {
         initializeMainViewport()
         initializeBotttomControlBar()
@@ -71,6 +86,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
     }
 
 
+    /*  function: initializeMainViewport
+    *   description: initializes the main activity UI
+    *       - initializes the main viewport, and sets the adapter
+    *       - creates listeners for all main activity buttons
+    *       - creates listeners for tabs
+    *   date: 02/18/19
+    *       - added function header
+    */
     private fun initializeMainViewport() {
         viewMain = findViewById(R.id.view_main)
         viewMain.adapter = sectionsPagerAdapter
@@ -117,7 +140,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener,
 
     // onClick
     override fun onClick(p0: View?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        when {
+
+        }
     }
 
     override fun onTabSelected(p0: TabLayout.Tab) {
