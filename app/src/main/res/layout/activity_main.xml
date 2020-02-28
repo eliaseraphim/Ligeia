@@ -151,6 +151,7 @@
 
         android:layout_below="@+id/top_app_bar_control_layout" />
 
+
     <!-- Music Control Bar-->
     <include layout="@layout/currrent_song_bar"
         android:id="@+id/toolbar_current_song"

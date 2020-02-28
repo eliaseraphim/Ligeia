@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/row_list_item"
+
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:weightSum="100" >
+
+    <ImageView
+        android:id="@+id/iv_row_list_item_cover"
+
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentStart="true"
+
+        android:src="@drawable/ligeia_default_ac_100"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_middle"
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:layout_toEndOf="@+id/iv_row_list_item_cover"
+        android:layout_toStartOf="@+id/ib_row_list_item_fav"
+
+        android:orientation="vertical"
+
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/tv_row_list_item_top"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+
+            android:layout_marginStart="10dp"
+
+            android:gravity="center_vertical"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:text="Top Text"/>
+
+        <TextView
+            android:id="@+id/tv_row_list_item_bottom"
+
+            android:layout_marginStart="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+
+            android:gravity="center_vertical"
+
+            android:textSize="16sp"
+            android:textStyle="italic"
+
+            android:text="Bottom Text"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ib_row_list_item_fav"
+
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+
+        android:src="@drawable/queue_add"
+        android:tint="@color/ligeia1Icons"
+        android:background="@color/colorTransparent"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+        android:layout_toStartOf="@+id/ib_row_list_item_options"/>
+
+    <ImageButton
+        android:id="@+id/ib_row_list_item_options"
+
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/options"
+        android:tint="@color/ligeia1Icons"
+        android:background="@color/colorTransparent"
+
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
